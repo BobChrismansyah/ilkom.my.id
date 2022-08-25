@@ -476,11 +476,11 @@ False
 False
 ----
 
-### Operator presedence
+### Operator precedence
 
 Di dalam Python, urutan pengerjaan suatu proses adalah sebagai berikut:
 
-<img src="/home/deo/Documents/DownloadFile.jpeg" alt="Urutan operasi" style="zoom: 67%;" />
+image:https://miro.medium.com/max/700/1*XCOKzXaTZVWkU-g7ZGdqKQ.png[]
 
 Contohnya:
 
