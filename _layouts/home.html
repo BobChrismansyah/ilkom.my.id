@@ -1,0 +1,24 @@
+{%- include header.html -%}
+<div class="row">
+    <div class="column column-left">
+        <div class="col-title pad">
+            🔖 :: {{ page.title }}
+        </div>
+        <div class="pad f-top">
+            {{ content }}
+            <h2>Post:</h2>
+            <ul class="list">
+                {% for post in site.posts %}
+                <li>
+                    <p><a href="{{ post.url }}" title="{{ site.url }}{{ post.url }}">
+                            {{ post.title }}</a><span></span></p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="column column-right">
+        <p id="author"></p>
+    </div>
+</div>
+{%- include footer.html -%}

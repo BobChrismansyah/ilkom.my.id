@@ -1,8 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
 
-Hy
+Hy, nama saya Deo, seorang programmer. Website ini semacam <i>log</i> tempat
+saya menyimpan catatan-catatan pelajaran yang sebelumnya pernah saya pelajari,
+khususnya ketika saya masih berkuliah. Jika terdapat kekelirian mohon dikoreksi.

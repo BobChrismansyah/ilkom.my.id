@@ -7,6 +7,20 @@ twitter_username: deovaliandro
 github_username:  sisfok
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
+  - jekyll-asciidoc
+  - jekyll-redirect-from
   - jekyll-feed
+
+asciidoctor:
+  attributes:
+    - icons=font
+    - source-highlighter=rouge
+    - sectanchors=_
+    - experimental=_
+    - rouge-style=github
+    - stylesdir=css
+
+markdown: kramdown
+highlighter: rouge
