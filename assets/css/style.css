@@ -146,3 +146,7 @@ footer {
 nav a {
     margin-right: 8px;
 }
+
+li {
+    list-style: square;
+}
