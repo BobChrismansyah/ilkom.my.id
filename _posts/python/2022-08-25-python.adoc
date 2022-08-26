@@ -550,9 +550,9 @@ untuk menghentikan while tanpa mengikuti semua kemungkinan maka digunakan `break
 ----
 i = 0
 while 1==1:
-      print(i)
-      i = i + 1
-      if i >= 5:
+    print(i)
+    i = i + 1
+    if i >= 5:
         print("Breaking")
         break
 
@@ -582,14 +582,14 @@ continue digunakan untuk melompati suatu while ketika terdapat kondisi tertentu.
 ----
 i = 0
 while True:
-       i = i +1
-       if i == 2:
-          print("Skipping 2")
-          continue
-       if i == 5:
-          print("Breaking")
-          break
-       print(i)
+    i = i +1
+    if i == 2:
+        print("Skipping 2")
+        continue
+    if i == 5:
+        print("Breaking")
+        break
+    print(i)
 
 print("Finished")
 ----
