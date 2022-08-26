@@ -85,7 +85,7 @@ Membagi dengan angka 0 (nol) akan dianggap error dalam Python:
 ----
 >>> 11 / 0
 Traceback (most recent call last):
-  	File "<stdin>", line 1, in <module>
+      File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
 ----
 
@@ -206,7 +206,7 @@ walaupun ada string yang berbentuk int, lalu dijumlahkan, maka tetap akan berben
 23
 >>> "1" + 2 + "3"
 Traceback (most recent call last):
-  	File "<stdin>", line 1, in <module>
+      File "<stdin>", line 1, in <module>
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ----
 
@@ -338,7 +338,7 @@ def shout(word):
     Print a word with an
     exclamation mark following it.
     """
-  	print(word + "!")
+      print(word + "!")
     
 shout("spam")
 ----
@@ -381,7 +381,7 @@ If digunakan untuk melakukan perintah ketika suatu kondisi bernilai benar. If bi
 ----
 foo = 2
 if foo > 0:
-	print(0)
+    print(0)
 ----
 
 Hasilnya:
@@ -393,11 +393,11 @@ Contoh lain:
 
 [source, python]
 if foo > 0:
-	print(0)
-	if foo > 1:
-		print(1)
-		if foo == 2
-			print(2)
+    print(0)
+    if foo > 1:
+        print(1)
+        if foo == 2
+            print(2)
 
 
 Hasilnya:
@@ -413,7 +413,7 @@ else digunakan untuk sebagai alternatif jika kondisi if tidak terpenuhi, selain 
 ----
 foo = 12
 if foo/2 == 2:
-	print(2)
+    print(2)
 else:
     print(4)
 ----
@@ -431,11 +431,11 @@ Contoh lain yang menggunakan else if menggabungkan else:
 ----
 foo = 12
 if foo/2 == 2:
-	print(2)
+    print(2)
 elif foo/2 == 4:
     print(4)
 elif foo/2 == 6
-	print(6)
+    print(6)
 else:
     print("Tidak ada")
 ----
@@ -515,7 +515,7 @@ Operator while bekerja seperti operator if, namun pada operator if hanya bisa be
 i = 1
 while i <=5:
     print(i)
-   	i = i + 1
+       i = i + 1
 
 print("Finished!")
 ----
@@ -537,7 +537,7 @@ salah satu manfaat dari operator while adalah infinity loop,
 [source, python]
 ----
 while 1==1:
-  	print("In the loop")
+      print("In the loop")
 ----
 
 > Program infinity loop dapat dihentikan dengan mengetikkan `CTRL` + `C` atau dengan menutup program
@@ -550,11 +550,11 @@ untuk menghentikan while tanpa mengikuti semua kemungkinan maka digunakan `break
 ----
 i = 0
 while 1==1:
-  	print(i)
-  	i = i + 1
-  	if i >= 5:
-    	print("Breaking")
-    	break
+      print(i)
+      i = i + 1
+      if i >= 5:
+        print("Breaking")
+        break
 
 print("Finished")
 ----
@@ -582,14 +582,14 @@ continue digunakan untuk melompati suatu while ketika terdapat kondisi tertentu.
 ----
 i = 0
 while True:
-   	i = i +1
-   	if i == 2:
-      	print("Skipping 2")
-      	continue
-   	if i == 5:
-      	print("Breaking")
-      	break
-   	print(i)
+       i = i +1
+       if i == 2:
+          print("Skipping 2")
+          continue
+       if i == 5:
+          print("Breaking")
+          break
+       print(i)
 
 print("Finished")
 ----
@@ -1088,7 +1088,7 @@ Sekali kita menggunakan perintah return, maka perintah dibawanya tidak akan dija
 def add_numbers(x, y):
     total = x + y
     return total
-	print("This won't be printed")
+    print("This won't be printed")
 
 print(add_numbers(4, 5))
 ----
@@ -1273,12 +1273,12 @@ Untuk menangkap sebuah error, kita dapat menggunakan perintah `try/except`. Peri
 ----
 try:
     num1 = 7
-   	num2 = 0
-   	print (num1 / num2)
-   	print("Done calculation")
+       num2 = 0
+       print (num1 / num2)
+       print("Done calculation")
 except ZeroDivisionError:
-   	print("An error occurred")
-   	print("due to zero division")
+       print("An error occurred")
+       print("due to zero division")
 ----
 
 Hasilnya:
@@ -1294,13 +1294,13 @@ due to zero division
 [source, python]
 ----
 try:
-   	variable = 10
-  	print(variable + "hello")
-  	print(variable / 2)
+       variable = 10
+      print(variable + "hello")
+      print(variable / 2)
 except ZeroDivisionError:
-   	print("Divided by zero")
+       print("Divided by zero")
 except (ValueError, TypeError):
-   	print("Error occurred")
+       print("Error occurred")
 ----
 
 Hasilnya:
@@ -1315,10 +1315,10 @@ Sedangkan `try` tanpa parameter pada `except` akan menangkap semua error yang ma
 [source, python]
 ----
 try:
-   	word = "spam"
-   	print(word / 0)
+       word = "spam"
+       print(word / 0)
 except:
-   	print("An error occurred")
+       print("An error occurred")
 ----
 
 Hasilnya:
@@ -1339,12 +1339,12 @@ Contohnya:
 [source, python]
 ----
 try:
-   	print("Hello")
-   	print(1 / 0)
+       print("Hello")
+       print(1 / 0)
 except ZeroDivisionError:
-   	print("Divided by zero")
+       print("Divided by zero")
 finally:
-   	print("This code will run no matter what")
+       print("This code will run no matter what")
 ----
 
 Hasilnya:
@@ -1361,12 +1361,12 @@ Kode di dalam `finally` akan di jalankan terlebih dahulu walaupun terdapat error
 [source, python]
 ----
 try:
-   	print(1)
-   	print(10 / 0)
+       print(1)
+       print(10 / 0)
 except ZeroDivisionError:
-   	print(unknown_var)
+       print(unknown_var)
 finally:
-  	print("This is executed last")
+      print("This is executed last")
 ----
 
 Hasilnya:
@@ -1419,10 +1419,10 @@ Di dalam `except`,`raise` bisa digunakan tanpa memanggil error yang dimaksud. Co
 [source, python]
 ----
 try:
-   	num = 5 / 0
+       num = 5 / 0
 except:
-   	print("An error occurred")
-   	raise
+       print("An error occurred")
+       raise
 ----
 
 Hasilnya:
@@ -1672,10 +1672,10 @@ Untuk bekerja lebih interaktif pada file, maka digunakan `try/finally`. Contohny
 [source, python]
 ----
 try:
-   	f = open("filename.txt")
-   	print(f.read())
+       f = open("filename.txt")
+       print(f.read())
 finally:
-   	f.close()
+       f.close()
 ----
 
 ini akan menyebabkan file tersebut terbuka terus menerus kecuali terdapat error.
@@ -1685,7 +1685,7 @@ Alternatif lain adalah menggunakan perintah `with`. Contohnya:
 [source, python]
 ----
 with open("filename.txt") as f:
-   	print(f.read())
+       print(f.read())
 ----
 
 dengan cara tersebut, maka akan membuat variabel sementara (variabel `f`). File akan otomatis tertutup ketika perintah `with` selesai.
@@ -1721,7 +1721,7 @@ None juga adalah kembalian fungsi yang tidak memiliki nilai `return`:
 [source, python]
 ----
 def some_func():
-  	print("Hi!")
+      print("Hi!")
 
 var = some_func()
 print(var)
@@ -1761,9 +1761,9 @@ Memanggil kunci yang tidak ada dalam dictionary akan menyebabkan error. Misalnya
 [source, python]
 ----
 primary = {
-  	"red": [255, 0, 0], 
-  	"green": [0, 255, 0], 
-  	"blue": [0, 0, 255], 
+      "red": [255, 0, 0], 
+      "green": [0, 255, 0], 
+      "blue": [0, 0, 255], 
 }
 
 print(primary["red"])
@@ -1820,8 +1820,8 @@ Untuk mengecek sebuah kunci di dalam dictionary, dapat digunakan `in` atau `not 
 ----
 nums = {
     1: "one",
-  	2: "two",
-  	3: "three",
+      2: "two",
+      3: "three",
 }
 print(1 in nums)
 print("three" in nums)
@@ -1843,9 +1843,9 @@ Sebuah method yang berguna pada dictionary adalah `get` yang berguna untuk menge
 ----
 pairs = {
     1: "apple",
-  	"orange": [2, 3, 4], 
-  	True: False, 
-  	None: "True",
+      "orange": [2, 3, 4], 
+      True: False, 
+      None: "True",
 }
 
 print(pairs.get("orange"))
@@ -2154,13 +2154,13 @@ Sebuah list dapat digunakan dalam pengkondisian dengan menggunakan `all` atau `a
 nums = [55, 44, 33, 22, 11]
 
 if all([i > 5 for i in nums]):
-   	print("All larger than 5")
+       print("All larger than 5")
 
 if any([i % 2 == 0 for i in nums]):
-   	print("At least one is even")
+       print("At least one is even")
 
 for v in enumerate(nums):
-   	print(v)
+       print(v)
 ----
 
 Hasilnya:
@@ -2192,7 +2192,7 @@ Lalu teks dibaca:
 filename = input("Enter a filename: ")
 
 with open(filename) as f:
-   	text = f.read()
+       text = f.read()
 
 print(text)
 ----
@@ -2202,10 +2202,10 @@ Lalu dibuat fungsi untuk mengecek jumlah karakter yang diberikan.
 [source, python]
 ----
 def count_char(text, char):
-  	count = 0
-  	for c in text:
-    	if c == char:
-      	count += 1
+      count = 0
+      for c in text:
+        if c == char:
+          count += 1
     return count
 ----
 
@@ -2215,7 +2215,7 @@ Dengan memanggil fungsi, misalnya diberikan karakter a:
 ----
 filename = input("Enter a filename: ")
 with open(filename) as f:
-  	text = f.read()
+      text = f.read()
 
 print(count_char(text, "a"))
 ----
@@ -2235,8 +2235,8 @@ Dengan menambahkan perintah untuk menghitung persentase setiap karakter:
 [source, python]
 ----
 for char in "abcdefghijklmnopqrstuvwxyz":
-  	perc = 100 * count_char(text, char) / len(text)
-  	print("{0} - {1}%".format(char, round(perc, 2)))
+      perc = 100 * count_char(text, char) / len(text)
+      print("{0} - {1}%".format(char, round(perc, 2)))
 ----
 
 Maka akan berbentuk:
@@ -2244,19 +2244,19 @@ Maka akan berbentuk:
 [source, python]
 ----
 def count_char(text, char):
-  	count = 0
-  	for c in text:
-    	if c == char:
-      		count += 1
-  	return count
+      count = 0
+      for c in text:
+        if c == char:
+              count += 1
+      return count
 
 filename = input("Enter a filename: ")
 with open(filename) as f:
-  	text = f.read()
+      text = f.read()
 
 for char in "abcdefghijklmnopqrstuvwxyz":
-  	perc = 100 * count_char(text, char) / len(text)
-  	print("{0} - {1}%".format(char, round(perc, 2)))
+      perc = 100 * count_char(text, char) / len(text)
+      print("{0} - {1}%".format(char, round(perc, 2)))
 ----
 
 Akan menghasilkan:
