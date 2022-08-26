@@ -1,4 +1,4 @@
-title: ilkom.my.id
+title: Home
 email: deo@ilkom.my.id
 description: Tempat latihan
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -6,12 +6,12 @@ url: "https://ilkom.my.id/"
 twitter_username: deovaliandro
 github_username:  sisfok
 
-# Build settings
-# theme: minima
 plugins:
   - jekyll-asciidoc
   - jekyll-redirect-from
   - jekyll-feed
+  - jekyll-toc
+  - jekyll-email-protect
 
 asciidoctor:
   attributes:
@@ -24,3 +24,9 @@ asciidoctor:
 
 markdown: kramdown
 highlighter: rouge
+
+kramdown:
+  parse_block_html: true
+
+toc:
+  ordered_list: true

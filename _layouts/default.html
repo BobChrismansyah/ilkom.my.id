@@ -7,7 +7,24 @@
         <div class="pad f-top">{{ content }}</div>
     </div>
     <div class="column column-right">
-        <p id="author"></p>
+        <div class="col-title0">
+            <table id="customers">
+                <tr>
+                  <td id="author"></td>
+                  <td id="bio"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="toc0">
+            <div id="table-of-contents">
+            </div>
+        </div>
     </div>
+    <script>
+        let elementToMove = document.getElementById('toc');
+        let destinationElement = document.getElementById('table-of-contents');
+
+        destinationElement.appendChild(elementToMove);
+    </script>
 </div>
 {%- include footer.html -%}

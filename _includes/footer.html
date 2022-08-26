@@ -1,12 +1,10 @@
 <hr>
 <footer>
     <div class="center">
-        <a
-            target="_blank"
-            href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+        <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
             CC BY-NC-SA 4.0</a> 2016-Sekarang, &copy; Deo Valiandro. M,
-            <span id="love">🌱</span> with <span id="love">💗</span>
-            from <span id="love">🇮🇩</span>.
+        <span id="love">🌱</span> with <span id="love">💗</span>
+        from <span id="love">🇮🇩</span>.
 
         <p>
             Situs ini menggunakan <a href="https://www.mathjax.org/">MathJax</a>
@@ -15,22 +13,26 @@
         <p>Kontak:
             <a href="https://github.com/deovaliandro" class="contact">Github</a>,
             <a href="https://gitlab.com/deovaliandro" class="contact">GitLab</a>,
-            <a href="mailto:me@deo.or.id" class="contact">me@deo.or.id</a>,
+            <a href="mailto:{{ 'me@deo.or.id' | encode_email }}" title="Contact me">me@deo.or.id</a>,
             <a href="https://twitter.com/deovaliandro" class="contact">@deovaliandro</a>,
             <a href="@deo@fosstodon.org">@deo@fosstodon.org</a>
         </p>
     </div>
+    <p id="hidd">{{ page.gauthor }}</p>
 </footer>
-</body>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script>
-    const myElement = document.getElementById("author");
-    fetch('https://api.github.com/users/deovaliandro')
+    var gacc = document.getElementById("hidd").innerHTML;
+    const author = document.getElementById("author");
+    const bio0 = document.getElementById("bio");
+    fetch('https://api.github.com/users/' + gacc)
         .then(result => result.json())
         .then((output) => {
             var avatar = output.avatar_url;
-            myElement.innerHTML = '<img class="img-author v-align" src="' + avatar + '" alt="">&emsp;' + output.name;
+            var bio = output.bio;
+            author.innerHTML = '<img class="img-author v-align" src="' + avatar + '" alt="">';
+            bio0.innerHTML = '<p class="name-text">' + output.name + '</p><p class="bio-text">' + bio + '</p>';
         }).catch(err => console.error(err));
 
     window.MathJax = {
@@ -40,5 +42,6 @@
         }
     };
 </script>
+</body>
 
 </html>

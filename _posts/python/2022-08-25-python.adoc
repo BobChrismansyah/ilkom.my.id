@@ -3,6 +3,8 @@
 :page-layout    : default
 :page-category  : python
 :page-hidden    : true
+:toc			: true
+:page-gauthor	: deovaliandro
 
 # Python 3
 

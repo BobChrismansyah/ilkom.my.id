@@ -6,6 +6,8 @@ group :jekyll_plugins do
   gem 'jekyll-asciidoc'
   gem 'jekyll-redirect-from'
   gem 'jekyll-paginate'
+  gem 'jekyll-toc'
+  gem 'jekyll-email-protect'
 end
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
