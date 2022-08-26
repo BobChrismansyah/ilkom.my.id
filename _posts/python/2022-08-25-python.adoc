@@ -6,31 +6,40 @@
 
 # Python 3
 
-Oleh: Deo Valiandro. M <valiandrod@gmail.com> - H131 16 306
+Oleh: Deo Valiandro. M <deo@ilkom.my.id, valiandrod@gmail.com> - `H13116306`
 
 ## Konsep Dasar
 
 ### Selamat datang
 
-Python adalah salah satu bahasa pemrograman tingkat tinggi dengan aplikasi pada banyak area, mulai dari pada pemrograman web, data mining, keamanan, sampai pada mikrocontroller.
+Python adalah salah satu bahasa pemrograman tingkat tinggi dengan aplikasi pada
+banyak area, mulai dari pada pemrograman web, data mining, keamanan, sampai pada
+mikrocontroller.
 
-Python digunakan juga di banyak perusahaan seperti Google, NASA, CIA dan sebagainya.
+Python digunakan juga di banyak perusahaan seperti Google, NASA, CIA dan
+sebagainya.
 
-> Python dijalankan menggunakan interpreter, yang artinya tidak perlu di compile untuk menjalankannya!
+> Python dijalankan menggunakan interpreter, yang artinya tidak perlu di compile
+> untuk menjalankannya!
 
-Pada saat tulisan ini dibuat, Python sudah mencapai versi `3.9`.
+Pada saat tulisan ini dibuat, Python sudah mencapai versi `3.10`.
 
 ### Instalasi Python
 
-Untuk menginstal Python, pertama-tama dengan mendownload file installernya di [website](https://www.python.org/) resmi dari Python.
+Untuk menginstal Python, pertama-tama dengan mendownload file installernya di
+[website](https://www.python.org/) resmi dari Python.
 
-Atau jika menggunakan sistem operasi Linux, maka Python sudah menjadi bawaannya. Untuk menggunakannya, dapat dengan membuka `cmd` atau `terminal`, lalu mengetikkan `python` atau `python3`.
+Atau jika menggunakan sistem operasi Linux, maka Python sudah menjadi bawaannya.
+Untuk menggunakannya, dapat dengan membuka `cmd` atau `terminal`, lalu
+mengetikkan `python` atau `python3`.
 
 ### Program pertama
 
-Seperti pada setiap pemrograman, hal pertama yang dilakukan adalah menjalankan `Hello World`
+Seperti pada setiap pemrograman, hal pertama yang dilakukan adalah menjalankan
+`Hello World`
 
-Untuk menjalankan program pertama, buka terminal atau cmd, ketikkan `python`, lalu masuk kan:
+Untuk menjalankan program pertama, buka terminal atau cmd, ketikkan `python`,
+lalu tuliskan:
 
 [source, python]
 ----
@@ -44,11 +53,12 @@ Lalu, tekan kbd:[Enter]
 Hello World
 ----
 
-Yey, berhasil...!!! :D
+Yey, berhasil...!!!  🎉 🎉 🎉
 
 ### Operasi sederhana
 
-Python dapat digunakan sebagai kalkulator sederhana. Coba lakukan operasi sederhana, misalnya:
+Python dapat digunakan sebagai kalkulator sederhana. Coba lakukan operasi
+sederhana, misalnya:
 
 [source, python]
 ----
@@ -1320,7 +1330,7 @@ An error occurred
 
 `finally` digunakan untuk menjalankan perintah tidak peduli terdapat error atau tidak. Perintah `finally` diletakkan di bawah `try/except`.
 
->   Kode yang ada pada `finally` akan selalu dijalankan.
+> Kode yang ada pada `finally` akan selalu dijalankan.
 
 Contohnya:
 
@@ -1444,7 +1454,7 @@ Hasilnya:
 AssertionError
 ----
 
->   Assertion biasanya digunakan pada pengecekan input dan output sebuah fungsi.
+> Assertion biasanya digunakan pada pengecekan input dan output sebuah fungsi.
 
 Assertion juga bisa menerima parameter kedua yaitu output yang akan ditampilkan ketika error terjadi. Contohnya:
 
@@ -1474,7 +1484,7 @@ untuk membuka file, kita menggunakan perintah `open`, contohnya:
 myfile = open("filename.txt")
 ----
 
->   filename.txt adalah nama file atau path tempat file tersebut disimpan
+> filename.txt adalah nama file atau path tempat file tersebut disimpan
 
 Untuk membuka file, juga dapat menerima argumen kedua yang mana berfungsi untuk `permision file`.
 
@@ -1500,7 +1510,7 @@ open("filename.txt")
 open("filename.txt", "wb")
 ----
 
->   Dapat digunakan tanda `+` untuk menambah ekstra akses, misalnya `r+` untuk mode `read` dan `write` bersamaan.
+> Dapat digunakan tanda `+` untuk menambah ekstra akses, misalnya `r+` untuk mode `read` dan `write` bersamaan.
 
 Kita dapat menampilkan isi file dengan perintah:
 
@@ -1524,7 +1534,7 @@ print(file.read())
 file.close()
 ----
 
->   Jika `file.read()` tidak diberikan nilai  atau negatif, maka file akan dibaca semua.
+> Jika `file.read()` tidak diberikan nilai  atau negatif, maka file akan dibaca semua.
 
 Setelah semua file di read, maka jika di read ulang, akan menghasilkan string kosong. Hal ini disebabkan program sudah mencapai `end of file`.
 
@@ -1576,7 +1586,7 @@ nama saya
 Deo Valiandro. M
 ----
 
->   Di output, baris dipisahkan oleh baris kosong, karena fungsi print secara otomatis menambahkan baris baru di akhir outputnya.
+> Di output, baris dipisahkan oleh baris kosong, karena fungsi print secara otomatis menambahkan baris baru di akhir outputnya.
 
 #### menulis file
 
@@ -1600,7 +1610,7 @@ Hasilnya:
 This has been written to a file
 ----
 
->   Parameter `w` akan otomatis membuat file baru jika file yang dituju tidak ada
+> Parameter `w` akan otomatis membuat file baru jika file yang dituju tidak ada
 
 File yang sementara terbuka, isinya akan kosong. Buktinya:
 
@@ -1653,7 +1663,7 @@ Hasilnya:
 12
 ----
 
->   Untuk menulis tipe data selain string, maka data tersebut harus di convert ke string.
+> Untuk menulis tipe data selain string, maka data tersebut harus di convert ke string.
 
 Untuk bekerja lebih interaktif pada file, maka digunakan `try/finally`. Contohnya:
 
@@ -1742,7 +1752,7 @@ Hasilnya:
 42
 ----
 
->   Representasi dari setiap elemen dictionary adalah pasangan `kunci:nilai`.
+> Representasi dari setiap elemen dictionary adalah pasangan `kunci:nilai`.
 
 Memanggil kunci yang tidak ada dalam dictionary akan menyebabkan error. Misalnya:
 
@@ -1767,7 +1777,7 @@ Hasilnya:
 KeyError: 'yellow'
 ----
 
->   Dictionary kosong dibuat dengan menggunakan `{}`
+> Dictionary kosong dibuat dengan menggunakan `{}`
 
 Kunci yang digunakan haruslah objek yang immutable atau tidak dapat diubah, sehingga objek-objke mutable seperti list dan dictionary tidak dapat digunakan sebagai kunci (error jika digunakan). Contohnya:
 
@@ -1909,7 +1919,7 @@ atau jika ingin membuat tuple kosong:
 tpl = ()
 ----
 
->   Tuple lebih cepat dari list, namun nilainya tidak bisa diubah
+> Tuple lebih cepat dari list, namun nilainya tidak bisa diubah
 
 ### List Slice
 
@@ -1949,7 +1959,7 @@ Hasilnya:
 [49, 64, 81]
 ----
 
->   `[:]` (slice) juga dapat digunakan pada tuples
+> `[:]` (slice) juga dapat digunakan pada tuples
 
 Slice juga dapat menggunakan dua titik dua `[a:b:c]`, yang mana 'c' adalah nilai lompat. Misalnya:
 
